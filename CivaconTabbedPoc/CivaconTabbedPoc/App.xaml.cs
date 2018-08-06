@@ -11,8 +11,9 @@ namespace CivaconTabbedPoc
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
-		}
+			MainPage = new NavigationPage(new TabbedPage1());
+           // MainPage = new MasterDetailPage1();
+        }
 
 		protected override void OnStart ()
 		{

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            Title="Civacon App"
+            BarTextColor="AliceBlue"
+            BarBackgroundColor="Blue"
+            Padding="10"      
+          
+             x:Class="CivaconTabbedPoc.TabbedPage1">
+  
+
+    <!--Pages can be added as references or inline-->
+    
+    <ContentPage Title="Dashboard"  BackgroundColor="White" >
+        <ContentPage.ToolbarItems>
+            <ToolbarItem Icon="dashboard" Text="Dashboard" Activated="Button_ClickedPrimeryToolbar" Order="Primary"></ToolbarItem>
+            <!--<ToolbarItem Icon="tracking" Text="Tracking" Activated="Button_ClickedSecondaryToolbar" Order ="SeCondary"></ToolbarItem>-->
+        </ContentPage.ToolbarItems>
+        <ContentPage.Content>
+            
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                <Label Text=" Welcome to Dashboard" TextColor="Red"/>
+                <Button Text="Click me" Clicked="Button_Clicked"/>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+    
+
+    <ContentPage Title="Tracking"  BackgroundColor="White">
+        <ContentPage.Content>
+            
+            <StackLayout >
+                <Label Text=" Welcome to Live Tracking" TextColor="Red"/>
+                <Image Source="trackingmap.jpg" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage Title="Report" BackgroundColor="DarkBlue">
+        <ContentPage.Content>
+            <StackLayout >
+                <Label Text=" Welcome to Report" TextColor="Red"/>
+                <Image Source="dashboard" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+    <ContentPage Title="Admin" BackgroundColor="White">
+        <ContentPage.Content>
+            <StackLayout >
+                <Label Text=" Welcome to Report" TextColor="Red"/>
+                <Image Source="dashboard" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    
+
+</TabbedPage>
